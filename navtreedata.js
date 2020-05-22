@@ -29,9 +29,9 @@ var NAVTREE =
       [ "What should I know before contributing?", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md1", null ],
       [ "What can I contribute / where can I help?", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md2", null ]
     ] ],
-    [ "String<sub>v2.0</sub>", "md__r_e_a_d_m_e.html", [
+    [ "String v2.0", "md__r_e_a_d_m_e.html", [
       [ "Major features", "md__r_e_a_d_m_e.html#autotoc_md4", [
-        [ "<tt>String::format</tt>", "md__r_e_a_d_m_e.html#autotoc_md5", null ]
+        [ "String::format", "md__r_e_a_d_m_e.html#autotoc_md5", null ]
       ] ],
       [ "How to use", "md__r_e_a_d_m_e.html#autotoc_md6", null ],
       [ "FAQ", "md__r_e_a_d_m_e.html#autotoc_md7", [
@@ -47,18 +47,25 @@ var NAVTREE =
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", null ]
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Enumerator", "functions_eval.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_string_8h_source.html"
+"_l_i_c_e_n_s_e.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

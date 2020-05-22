@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['length_23',['length',['../class_string.html#a78e422178ba93ec94285b40d34abed3d',1,'String::length()'],['../class_const_string.html#a6eb3063c7998a22b38c78b6f792c2769',1,'ConstString::length()']]]
+  ['insert_27',['insert',['../class_string.html#a0d0a9c9d6eb4a2da5ba25dce5417a850',1,'String::insert(ConstIterator iter, char c)'],['../class_string.html#a10390623ccc748b7075164e4e426fad9',1,'String::insert(ConstIterator iter, const String &amp;s)'],['../class_string.html#a024ab967e6dc72d485a2b8bdd27864db',1,'String::insert(ConstIterator iter, ConstIterator begin, ConstIterator end)']]],
+  ['iterator_28',['Iterator',['../class_string.html#a965c0fd3bf64cc44014ca6b32683b391',1,'String']]]
 ];

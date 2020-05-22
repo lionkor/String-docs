@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['replace_31',['replace',['../class_string.html#a57f489d8d7955e6f4abe91227a758b1f',1,'String::replace(char to_replace, char replace_with)'],['../class_string.html#a0e866adf07e2880807aa60fafde0eb48',1,'String::replace(const String &amp;to_replace, const String &amp;replace_with)'],['../class_string.html#a9fd9cec8fd57c54c0ff087f2c80ed23b',1,'String::replace(const String &amp;to_replace, const String &amp;replace_with, std::size_t n)']]],
-  ['reserve_32',['reserve',['../class_string.html#ab1e1fec1f5856f58bbd1ca68a7efa1f6',1,'String']]]
+  ['precision_42',['precision',['../struct_string_1_1_format.html#a6b4b3f734c08750630483e572a1b0672',1,'String::Format']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>String: String&lt;sub&gt;v2.0&lt;/sub&gt;</title>
+<title>String: String v2.0</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,7 +84,7 @@ $(document).ready(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizab
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title"><a class="el" href="class_string.html" title="The String class represents a not-null-terminated string.">String</a><sub>v2.0</sub> </div>  </div>
+<div class="title"><a class="el" href="class_string.html" title="The String class represents a not-null-terminated string.">String</a> v2.0 </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Full rewrite of this simple modern <a class="el" href="class_string.html" title="The String class represents a not-null-terminated string.">String</a> class / library. Incompatible with v1.0 which can be found <a href="https://github.com/lionkor/legacy-1.0">here</a>.</p>
@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizab
 <h1><a class="anchor" id="autotoc_md4"></a>
 Major features</h1>
 <h2><a class="anchor" id="autotoc_md5"></a>
-&lt;tt&gt;String::format&lt;/tt&gt;</h2>
+String::format</h2>
 <p>A static method allowing for simple and fast formatting. Allows any type <code>T</code> with an overload to <code>ostream&amp; operator(ostream&amp;, T)</code> to be formatted into the <a class="el" href="class_string.html" title="The String class represents a not-null-terminated string.">String</a> correctly. Because of this, it also supports all primitive types.</p>
 <p>Examples:</p>
 <div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span>* name = <span class="stringliteral">&quot;Dave&quot;</span>;</div>
@@ -105,15 +105,15 @@ Major features</h1>
 <div class="line">fmt.<a class="code" href="struct_string_1_1_format.html#a6b4b3f734c08750630483e572a1b0672">precision</a>    = 3;</div>
 <div class="line">fmt.<a class="code" href="struct_string_1_1_format.html#ab47965d3b59dfc9116a33015182020c3">width</a>        = 10;</div>
 <div class="line">fmt.<a class="code" href="struct_string_1_1_format.html#adaea6c88ad09c7ecabcd2d602152b130">alignment</a>    = String::Format::Align::Right;</div>
-<div class="line"><a class="code" href="class_string.html">String</a> my_string = <a class="code" href="class_string.html#a7439ea31058ebbf872af5c5a5cd65fb0">String::format</a>(fmt, 3.53214, <span class="stringliteral">&quot; |&quot;</span>, fmt, 5.2436, <span class="stringliteral">&quot; |&quot;</span>);</div>
+<div class="line"><a class="code" href="class_string.html">String</a> my_string = <a class="code" href="class_string.html#a7439ea31058ebbf872af5c5a5cd65fb0">String::format</a>(<span class="stringliteral">&quot;.&quot;</span>, fmt, 3.53214, <span class="stringliteral">&quot; |&quot;</span>, fmt, 5.2436, <span class="stringliteral">&quot; |&quot;</span>);</div>
 <div class="line">std::cout &lt;&lt; my_string &lt;&lt; std::endl;</div>
-</div><!-- fragment --><p>will output: </p><div class="fragment"><div class="line">3.53 |      5.24 |</div>
+</div><!-- fragment --><p>will output: </p><div class="fragment"><div class="line">.        3.53 |      5.24 |</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
 How to use</h1>
 <ol type="1">
 <li>clone this repository (recursively)</li>
 <li>switch to the <code>rewrite</code> branch</li>
-<li>include <code><a class="el" href="_string_8h_source.html">String.h</a></code> and add <code>String.cpp</code> to your source files (for an example look at <code>CMakeLists.txt</code>)</li>
+<li>include <code><a class="el" href="_string_8h.html">String.h</a></code> and add <code><a class="el" href="_string_8cpp.html">String.cpp</a></code> to your source files (for an example look at <code>CMakeLists.txt</code>)</li>
 </ol>
 <h1><a class="anchor" id="autotoc_md7"></a>
 FAQ</h1>
@@ -130,12 +130,12 @@ Where did open issues go?</h2>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_string_1_1_format_html_adaea6c88ad09c7ecabcd2d602152b130"><div class="ttname"><a href="struct_string_1_1_format.html#adaea6c88ad09c7ecabcd2d602152b130">String::Format::alignment</a></div><div class="ttdeci">Align alignment</div><div class="ttdoc">Alignment used with width. See std::ios::left and std::ios::right.</div><div class="ttdef"><b>Definition:</b> String.h:249</div></div>
-<div class="ttc" id="aclass_string_html_a7439ea31058ebbf872af5c5a5cd65fb0"><div class="ttname"><a href="class_string.html#a7439ea31058ebbf872af5c5a5cd65fb0">String::format</a></div><div class="ttdeci">static String format(Args &amp;&amp;... things)</div><div class="ttdoc">Constructs a string from non-string arguments.</div><div class="ttdef"><b>Definition:</b> String.h:212</div></div>
-<div class="ttc" id="astruct_string_1_1_format_html_ab47965d3b59dfc9116a33015182020c3"><div class="ttname"><a href="struct_string_1_1_format.html#ab47965d3b59dfc9116a33015182020c3">String::Format::width</a></div><div class="ttdeci">int width</div><div class="ttdoc">Width used on some format operations. See std::ios::width.</div><div class="ttdef"><b>Definition:</b> String.h:251</div></div>
-<div class="ttc" id="aclass_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">The String class represents a not-null-terminated string.</div><div class="ttdef"><b>Definition:</b> String.h:24</div></div>
-<div class="ttc" id="astruct_string_1_1_format_html"><div class="ttname"><a href="struct_string_1_1_format.html">String::Format</a></div><div class="ttdoc">Specifies the formatting of a String::format operation.</div><div class="ttdef"><b>Definition:</b> String.h:229</div></div>
-<div class="ttc" id="astruct_string_1_1_format_html_a6b4b3f734c08750630483e572a1b0672"><div class="ttname"><a href="struct_string_1_1_format.html#a6b4b3f734c08750630483e572a1b0672">String::Format::precision</a></div><div class="ttdeci">int precision</div><div class="ttdoc">The precision (i.e. how many digits are generated) of floating point numbers output with this format....</div><div class="ttdef"><b>Definition:</b> String.h:245</div></div>
+<div class="ttc" id="astruct_string_1_1_format_html_adaea6c88ad09c7ecabcd2d602152b130"><div class="ttname"><a href="struct_string_1_1_format.html#adaea6c88ad09c7ecabcd2d602152b130">String::Format::alignment</a></div><div class="ttdeci">Align alignment</div><div class="ttdoc">Alignment used with width. See std::ios::left and std::ios::right.</div><div class="ttdef"><b>Definition:</b> String.h:248</div></div>
+<div class="ttc" id="aclass_string_html_a7439ea31058ebbf872af5c5a5cd65fb0"><div class="ttname"><a href="class_string.html#a7439ea31058ebbf872af5c5a5cd65fb0">String::format</a></div><div class="ttdeci">static String format(Args &amp;&amp;... things)</div><div class="ttdoc">Constructs a string from non-string arguments.</div><div class="ttdef"><b>Definition:</b> String.h:211</div></div>
+<div class="ttc" id="astruct_string_1_1_format_html_ab47965d3b59dfc9116a33015182020c3"><div class="ttname"><a href="struct_string_1_1_format.html#ab47965d3b59dfc9116a33015182020c3">String::Format::width</a></div><div class="ttdeci">int width</div><div class="ttdoc">Width used on some format operations. See std::ios::width.</div><div class="ttdef"><b>Definition:</b> String.h:250</div></div>
+<div class="ttc" id="aclass_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdoc">The String class represents a not-null-terminated string.</div><div class="ttdef"><b>Definition:</b> String.h:23</div></div>
+<div class="ttc" id="astruct_string_1_1_format_html"><div class="ttname"><a href="struct_string_1_1_format.html">String::Format</a></div><div class="ttdoc">Specifies the formatting of a String::format operation.</div><div class="ttdef"><b>Definition:</b> String.h:228</div></div>
+<div class="ttc" id="astruct_string_1_1_format_html_a6b4b3f734c08750630483e572a1b0672"><div class="ttname"><a href="struct_string_1_1_format.html#a6b4b3f734c08750630483e572a1b0672">String::Format::precision</a></div><div class="ttdeci">int precision</div><div class="ttdoc">The precision (i.e. how many digits are generated) of floating point numbers output with this format....</div><div class="ttdef"><b>Definition:</b> String.h:244</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

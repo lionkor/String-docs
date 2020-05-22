@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['string_42',['String',['../class_string.html',1,'']]]
+  ['string_59',['String',['../class_string.html',1,'']]]
 ];
