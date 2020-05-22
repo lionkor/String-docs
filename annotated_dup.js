@@ -1,5 +1,5 @@
 var annotated_dup =
 [
-    [ "ConstString", "class_const_string.html", "class_const_string" ],
-    [ "String", "class_string.html", "class_string" ]
+    [ "ConstString", "d4/d59/class_const_string.html", "d4/d59/class_const_string" ],
+    [ "String", "de/d61/class_string.html", "de/d61/class_string" ]
 ];

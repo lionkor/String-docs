@@ -25,26 +25,26 @@
 var NAVTREE =
 [
   [ "String", "index.html", [
-    [ "Contributing", "md__c_o_n_t_r_i_b_u_t_i_n_g.html", [
-      [ "What should I know before contributing?", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md1", null ],
-      [ "What can I contribute / where can I help?", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md2", null ]
+    [ "Contributing", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html", [
+      [ "What should I know before contributing?", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md1", null ],
+      [ "What can I contribute / where can I help?", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md2", null ]
     ] ],
-    [ "String v2.0", "md__r_e_a_d_m_e.html", [
-      [ "Documentation", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
-      [ "How to use", "md__r_e_a_d_m_e.html#autotoc_md5", [
-        [ "1 Compile with your project", "md__r_e_a_d_m_e.html#autotoc_md6", null ],
-        [ "2 Compile as library, link (linux/unix)", "md__r_e_a_d_m_e.html#autotoc_md7", null ]
+    [ "String v2.0", "d3/dcc/md__r_e_a_d_m_e.html", [
+      [ "Documentation", "d3/dcc/md__r_e_a_d_m_e.html#autotoc_md4", null ],
+      [ "How to use", "d3/dcc/md__r_e_a_d_m_e.html#autotoc_md5", [
+        [ "1 Compile with your project", "d3/dcc/md__r_e_a_d_m_e.html#autotoc_md6", null ],
+        [ "2 Compile as library, link (linux/unix)", "d3/dcc/md__r_e_a_d_m_e.html#autotoc_md7", null ]
       ] ],
-      [ "Major features", "md__r_e_a_d_m_e.html#autotoc_md8", [
-        [ "String::format", "md__r_e_a_d_m_e.html#autotoc_md9", null ]
+      [ "Major features", "d3/dcc/md__r_e_a_d_m_e.html#autotoc_md8", [
+        [ "String::format", "d3/dcc/md__r_e_a_d_m_e.html#autotoc_md9", null ]
       ] ],
-      [ "FAQ", "md__r_e_a_d_m_e.html#autotoc_md10", [
-        [ "How do you run the tests?", "md__r_e_a_d_m_e.html#autotoc_md11", null ],
-        [ "Is std::string not good?", "md__r_e_a_d_m_e.html#autotoc_md12", null ],
-        [ "Is it faster / slower than std::string?", "md__r_e_a_d_m_e.html#autotoc_md13", null ],
-        [ "How do you convert to std::string or char*?", "md__r_e_a_d_m_e.html#autotoc_md14", null ],
-        [ "Why std::vector?", "md__r_e_a_d_m_e.html#autotoc_md15", null ],
-        [ "Where did open issues go?", "md__r_e_a_d_m_e.html#autotoc_md16", null ]
+      [ "FAQ", "d3/dcc/md__r_e_a_d_m_e.html#autotoc_md10", [
+        [ "How do you run the tests?", "d3/dcc/md__r_e_a_d_m_e.html#autotoc_md11", null ],
+        [ "Is std::string not good?", "d3/dcc/md__r_e_a_d_m_e.html#autotoc_md12", null ],
+        [ "Is it faster / slower than std::string?", "d3/dcc/md__r_e_a_d_m_e.html#autotoc_md13", null ],
+        [ "How do you convert to std::string or char*?", "d3/dcc/md__r_e_a_d_m_e.html#autotoc_md14", null ],
+        [ "Why std::vector?", "d3/dcc/md__r_e_a_d_m_e.html#autotoc_md15", null ],
+        [ "Where did open issues go?", "d3/dcc/md__r_e_a_d_m_e.html#autotoc_md16", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -72,7 +72,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_l_i_c_e_n_s_e.html"
+"annotated.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
