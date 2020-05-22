@@ -171,12 +171,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a78e422178ba93ec94285b40d34abed3d"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_string.html#a78e422178ba93ec94285b40d34abed3d">length</a> () const noexcept</td></tr>
 <tr class="memdesc:a78e422178ba93ec94285b40d34abed3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length or size of the string.  <a href="class_string.html#a78e422178ba93ec94285b40d34abed3d">More...</a><br /></td></tr>
 <tr class="separator:a78e422178ba93ec94285b40d34abed3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a394dede79f4ac6f9dc6bf52a04f57013"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_string.html#a394dede79f4ac6f9dc6bf52a04f57013">as_c_string</a> () const</td></tr>
-<tr class="memdesc:a394dede79f4ac6f9dc6bf52a04f57013"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique_ptr managed char[] containing a copy of the data of the string, guaranteed to be null-terminated.  <a href="class_string.html#a394dede79f4ac6f9dc6bf52a04f57013">More...</a><br /></td></tr>
-<tr class="separator:a394dede79f4ac6f9dc6bf52a04f57013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a170f57040415f2e50f913ca13470a7d8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_string.html#a170f57040415f2e50f913ca13470a7d8">as_std_string</a> () const</td></tr>
-<tr class="memdesc:a170f57040415f2e50f913ca13470a7d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A copy of this string represented as a std::string.  <a href="class_string.html#a170f57040415f2e50f913ca13470a7d8">More...</a><br /></td></tr>
-<tr class="separator:a170f57040415f2e50f913ca13470a7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a5b9637cebca0ef91bacf0b52c60022"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_string.html#a6a5b9637cebca0ef91bacf0b52c60022">to_c_string</a> () const</td></tr>
+<tr class="memdesc:a6a5b9637cebca0ef91bacf0b52c60022"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique_ptr managed char[] containing a copy of the data of the string, guaranteed to be null-terminated.  <a href="class_string.html#a6a5b9637cebca0ef91bacf0b52c60022">More...</a><br /></td></tr>
+<tr class="separator:a6a5b9637cebca0ef91bacf0b52c60022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bae6b4327715cdb29bd59fc17fb6c24"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_string.html#a2bae6b4327715cdb29bd59fc17fb6c24">to_std_string</a> () const</td></tr>
+<tr class="memdesc:a2bae6b4327715cdb29bd59fc17fb6c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">A copy of this string represented as a std::string.  <a href="class_string.html#a2bae6b4327715cdb29bd59fc17fb6c24">More...</a><br /></td></tr>
+<tr class="separator:a2bae6b4327715cdb29bd59fc17fb6c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8270e74db4c76725871abda0316d1bec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_string.html#a8270e74db4c76725871abda0316d1bec">clear</a> () noexcept</td></tr>
 <tr class="memdesc:a8270e74db4c76725871abda0316d1bec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the contents of the string, resulting string will be the empty string.  <a href="class_string.html#a8270e74db4c76725871abda0316d1bec">More...</a><br /></td></tr>
 <tr class="separator:a8270e74db4c76725871abda0316d1bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,7 +308,7 @@ Friends</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd><code>lionkor</code> (Lion Kortlepel)</dd></dl>
 <p>A <a class="el" href="class_string.html" title="The String class represents a not-null-terminated string.">String</a> class without many of the inconsistencies that <code>std::string</code> brings, and many helper functions, making it more alike Python or .NET strings.</p>
 <p>Implemented as a wrapper around a <code>std::vector&lt;char&gt;</code> for safety, simplicity and speed. This means that any <code>&lt;algorithm&gt;</code> calls should work as expected.</p>
-<dl class="section attention"><dt>Attention</dt><dd><a class="el" href="class_string.html" title="The String class represents a not-null-terminated string.">String</a> is <b>not</b> null-terminated. If a null-terminated string is needed, it's very simple to convert to a <code>std::string</code> or c-string via <code><a class="el" href="class_string.html#a394dede79f4ac6f9dc6bf52a04f57013" title="A unique_ptr managed char[] containing a copy of the data of the string, guaranteed to be null-termin...">String::as_c_string</a></code> and <code><a class="el" href="class_string.html#a170f57040415f2e50f913ca13470a7d8" title="A copy of this string represented as a std::string.">String::as_std_string</a></code>. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd><a class="el" href="class_string.html" title="The String class represents a not-null-terminated string.">String</a> is <b>not</b> null-terminated. If a null-terminated string is needed, it's very simple to convert to a <code>std::string</code> or c-string via <code><a class="el" href="class_string.html#a6a5b9637cebca0ef91bacf0b52c60022" title="A unique_ptr managed char[] containing a copy of the data of the string, guaranteed to be null-termin...">String::to_c_string</a></code> and <code><a class="el" href="class_string.html#a2bae6b4327715cdb29bd59fc17fb6c24" title="A copy of this string represented as a std::string.">String::to_std_string</a></code>. </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a85586aa5f5a54144570234db0014e689"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85586aa5f5a54144570234db0014e689">&#9670;&nbsp;</a></span>ConstIterator</h2>
@@ -540,44 +540,6 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a394dede79f4ac6f9dc6bf52a04f57013"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a394dede79f4ac6f9dc6bf52a04f57013">&#9670;&nbsp;</a></span>as_c_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt; char &gt; String::as_c_string </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A unique_ptr managed char[] containing a copy of the data of the string, guaranteed to be null-terminated. </p>
-
-</div>
-</div>
-<a id="a170f57040415f2e50f913ca13470a7d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a170f57040415f2e50f913ca13470a7d8">&#9670;&nbsp;</a></span>as_std_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string String::as_std_string </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A copy of this string represented as a std::string. </p>
-
-</div>
-</div>
 <a id="aadcb47ae5d17af5f1fd523c1aa7714f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aadcb47ae5d17af5f1fd523c1aa7714f1">&#9670;&nbsp;</a></span>at() <span class="overload">[1/2]</span></h2>
 
@@ -1862,6 +1824,44 @@ template&lt;class... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>A copy of the first n chars from start, as a new string. </p>
+
+</div>
+</div>
+<a id="a6a5b9637cebca0ef91bacf0b52c60022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a5b9637cebca0ef91bacf0b52c60022">&#9670;&nbsp;</a></span>to_c_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; char &gt; String::to_c_string </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A unique_ptr managed char[] containing a copy of the data of the string, guaranteed to be null-terminated. </p>
+
+</div>
+</div>
+<a id="a2bae6b4327715cdb29bd59fc17fb6c24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bae6b4327715cdb29bd59fc17fb6c24">&#9670;&nbsp;</a></span>to_std_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string String::to_std_string </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A copy of this string represented as a std::string. </p>
 
 </div>
 </div>

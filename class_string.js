@@ -12,8 +12,6 @@ var class_string =
     [ "String", "class_string.html#ada4aacc825b3764d53a3c2514ff9c8db", null ],
     [ "String", "class_string.html#ab636c1e6dc35b37157b9cf698657b259", null ],
     [ "String", "class_string.html#a0cdc5e242de78b5f1ed5777d945e76be", null ],
-    [ "as_c_string", "class_string.html#a394dede79f4ac6f9dc6bf52a04f57013", null ],
-    [ "as_std_string", "class_string.html#a170f57040415f2e50f913ca13470a7d8", null ],
     [ "at", "class_string.html#aadcb47ae5d17af5f1fd523c1aa7714f1", null ],
     [ "at", "class_string.html#aa6efec664ec8ae5b3fe6fc0ff896e65d", null ],
     [ "begin", "class_string.html#a55b709429c65bf186989a95027a99c09", null ],
@@ -62,6 +60,8 @@ var class_string =
     [ "startswith", "class_string.html#a4532aa2b81eccf6eea8b45b7d58a7000", null ],
     [ "substring", "class_string.html#ae07c022aa008954b26a37893290205b4", null ],
     [ "substring", "class_string.html#a345c16d3e810664cfd1fb36411549091", null ],
+    [ "to_c_string", "class_string.html#a6a5b9637cebca0ef91bacf0b52c60022", null ],
+    [ "to_std_string", "class_string.html#a2bae6b4327715cdb29bd59fc17fb6c24", null ],
     [ "operator<<", "class_string.html#a18332672ad6e721a4db7f99456539719", null ],
     [ "operator>>", "class_string.html#a91b9cb194b46a5520c6eb78bb862ce7b", null ]
 ];
