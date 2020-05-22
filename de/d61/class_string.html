@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('de/d61/class_string.html','../../'); i
 <p>The <a class="el" href="../../de/d61/class_string.html" title="The String class represents a not-null-terminated string.">String</a> class represents a not-null-terminated string.  
  <a href="../../de/d61/class_string.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../db/db5/_string_8h_source.html">String.h</a>&gt;</code></p>
+<p><code>#include &lt;String.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -309,8 +309,6 @@ Friends</h2></td></tr>
 <p>A <a class="el" href="../../de/d61/class_string.html" title="The String class represents a not-null-terminated string.">String</a> class without many of the inconsistencies that <code>std::string</code> brings, and many helper functions, making it more alike Python or .NET strings.</p>
 <p>Implemented as a wrapper around a <code>std::vector&lt;char&gt;</code> for safety, simplicity and speed. This means that any <code>&lt;algorithm&gt;</code> calls should work as expected.</p>
 <dl class="section attention"><dt>Attention</dt><dd><a class="el" href="../../de/d61/class_string.html" title="The String class represents a not-null-terminated string.">String</a> is <b>not</b> null-terminated. If a null-terminated string is needed, it's very simple to convert to a <code>std::string</code> or c-string via <code><a class="el" href="../../de/d61/class_string.html#a6a5b9637cebca0ef91bacf0b52c60022" title="A unique_ptr managed char[] containing a copy of the data of the string, guaranteed to be null-termin...">String::to_c_string</a></code> and <code><a class="el" href="../../de/d61/class_string.html#a2bae6b4327715cdb29bd59fc17fb6c24" title="A copy of this string represented as a std::string.">String::to_std_string</a></code>. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="../../db/db5/_string_8h_source.html#l00022">22</a> of file <a class="el" href="../../db/db5/_string_8h_source.html">String.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a85586aa5f5a54144570234db0014e689"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85586aa5f5a54144570234db0014e689">&#9670;&nbsp;</a></span>ConstIterator</h2>
@@ -323,8 +321,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../db/db5/_string_8h_source.html#l00033">33</a> of file <a class="el" href="../../db/db5/_string_8h_source.html">String.h</a>.</p>
 
 </div>
 </div>
@@ -339,8 +335,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../db/db5/_string_8h_source.html#l00035">35</a> of file <a class="el" href="../../db/db5/_string_8h_source.html">String.h</a>.</p>
 
 </div>
 </div>
@@ -359,8 +353,6 @@ Friends</h2></td></tr>
 <p>Iterators used to iterate over the <a class="el" href="../../de/d61/class_string.html" title="The String class represents a not-null-terminated string.">String</a>. </p>
 <dl class="section attention"><dt>Attention</dt><dd>Do <em>not</em> rely on these iterators being aliases for std::vector iterators. This might change at any point. Treat them as their own types. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db5/_string_8h_source.html#l00032">32</a> of file <a class="el" href="../../db/db5/_string_8h_source.html">String.h</a>.</p>
-
 </div>
 </div>
 <a id="a1e2b50d6354395970a862035dbff60c4"></a>
@@ -374,8 +366,6 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../db/db5/_string_8h_source.html#l00034">34</a> of file <a class="el" href="../../db/db5/_string_8h_source.html">String.h</a>.</p>
 
 </div>
 </div>
@@ -397,8 +387,6 @@ Friends</h2></td></tr>
 
 <p>New empty string, equivalent to <code>""</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00009">9</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ab363e906738fde24670b6de4da20a1eb"></a>
@@ -418,8 +406,6 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>New string from nullptr -&gt; empty string. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
 
 </div>
 </div>
@@ -449,8 +435,6 @@ Friends</h2></td></tr>
 
 <p>New string with only the char <code>c</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00013">13</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ab8e29badab15b29ba073e3c8fad38344"></a>
@@ -470,8 +454,6 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>New string with cstr as content. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00017">17</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
 
 </div>
 </div>
@@ -502,8 +484,6 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>New string from another string's iterators. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
 
 </div>
 </div>
@@ -584,8 +564,6 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aa6efec664ec8ae5b3fe6fc0ff896e65d"></a>
@@ -612,8 +590,6 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a55b709429c65bf186989a95027a99c09"></a>
@@ -632,8 +608,6 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Begin iterator. Points to the first char in the string. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
 
 </div>
 </div>
@@ -654,8 +628,6 @@ Friends</h2></td></tr>
 
 <p>Const begin iterator. Points to the first char in the string. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a3e3675d00987ec255dcd841c83d9de48"></a>
@@ -675,8 +647,6 @@ Friends</h2></td></tr>
 
 <p>Capacity of the string's underlying allocated memory. </p>
 <p>The <a class="el" href="../../de/d61/class_string.html" title="The String class represents a not-null-terminated string.">String</a>'s size may grow up to this capacity without any reallocation taking place. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00281">281</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
 
 </div>
 </div>
@@ -705,8 +675,6 @@ Friends</h2></td></tr>
 
 <p>Clears the contents of the string, resulting string will be the empty string. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a1ba72aa0f4efeeb7e35e91b50cab7702"></a>
@@ -727,9 +695,7 @@ Friends</h2></td></tr>
 
 <p>Whether this string contains the substring. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00166">166</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00122">find()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00053">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>, <a class="el" href="../../de/d61/class_string.html#aa7552304b9c74d1cf65a7ee5470210c9">find()</a>, and <a class="el" href="../../de/d61/class_string.html#a23920b1220d6a094d35724077c2f6ee4">size()</a>.</p>
 
 </div>
 </div>
@@ -758,8 +724,6 @@ Friends</h2></td></tr>
 
 <p>Raw const pointer to the data of this <a class="el" href="../../de/d61/class_string.html" title="The String class represents a not-null-terminated string.">String</a>. Keep in mind that this is NOT null-terminated. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00293">293</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ac28ff00bb3da67f610a87f9ad9dc8651"></a>
@@ -786,8 +750,6 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Raw pointer to the data of this <a class="el" href="../../de/d61/class_string.html" title="The String class represents a not-null-terminated string.">String</a>. Keep in mind that this is NOT null-terminated. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00289">289</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
 
 </div>
 </div>
@@ -816,8 +778,6 @@ Friends</h2></td></tr>
 
 <p>True if the string is empty, i.e. has length 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aff08fca7243120ea188090ebb4ae785e"></a>
@@ -837,8 +797,6 @@ Friends</h2></td></tr>
 
 <p>End iterator. points at the position past the end of the string. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a6b7986f9be5de5c4fa6067ce094e281e"></a>
@@ -857,8 +815,6 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Const end iterator. points at the position past the end of the string. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
 
 </div>
 </div>
@@ -880,9 +836,7 @@ Friends</h2></td></tr>
 
 <p>Whether this string ends with the substring. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00178">178</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">begin()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00053">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a55b709429c65bf186989a95027a99c09">begin()</a>, <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>, and <a class="el" href="../../de/d61/class_string.html#a23920b1220d6a094d35724077c2f6ee4">size()</a>.</p>
 
 </div>
 </div>
@@ -904,9 +858,7 @@ Friends</h2></td></tr>
 
 <p>Does a case-sensitive comparison between the chars of both strings. Same as String::operator==(const String&amp;). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00184">184</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">begin()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00053">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a55b709429c65bf186989a95027a99c09">begin()</a>, <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>, and <a class="el" href="../../de/d61/class_string.html#a23920b1220d6a094d35724077c2f6ee4">size()</a>.</p>
 
 </div>
 </div>
@@ -938,9 +890,7 @@ Friends</h2></td></tr>
 
 <p>Removes elements between from and to. Invalidates iterators. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">begin()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00049">empty()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a55b709429c65bf186989a95027a99c09">begin()</a>, <a class="el" href="../../de/d61/class_string.html#a7a2c6b7ee5265930faa91993dbc161c9">empty()</a>, and <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>.</p>
 
 </div>
 </div>
@@ -962,9 +912,7 @@ Friends</h2></td></tr>
 
 <p>Removes the element pointed to by the iterator. Invalidates iterators. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">begin()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00049">empty()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a55b709429c65bf186989a95027a99c09">begin()</a>, <a class="el" href="../../de/d61/class_string.html#a7a2c6b7ee5265930faa91993dbc161c9">empty()</a>, and <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>.</p>
 
 </div>
 </div>
@@ -996,9 +944,7 @@ Friends</h2></td></tr>
 
 <p>Removes n elements starting at the iterator position. Invalidates iterators. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00110">110</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00098">erase()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#af5c18895c77e8ff3918bcd970a5fa317">erase()</a>.</p>
 
 </div>
 </div>
@@ -1024,8 +970,6 @@ Friends</h2></td></tr>
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00122">122</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a8908ed811f7654ded09a25480b90c7e6"></a>
@@ -1049,8 +993,6 @@ Friends</h2></td></tr>
 <li><code>c</code> character to find, case-sensitive. <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../de/d61/class_string.html#a85586aa5f5a54144570234db0014e689">String::ConstIterator</a> pointing to the found character, or <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e" title="End iterator. points at the position past the end of the string.">end()</a> if nothing was found. </dd></dl>
 </li>
 </ul>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00126">126</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
 
 </div>
 </div>
@@ -1087,8 +1029,6 @@ Friends</h2></td></tr>
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a629d3a280614e0e813b8007aed6d7239"></a>
@@ -1124,8 +1064,6 @@ Friends</h2></td></tr>
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a3bb1346221ed46a753eddf4617f48f1f"></a>
@@ -1147,9 +1085,7 @@ Friends</h2></td></tr>
 <p>Finds the first occurance of the string inside this string. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../de/d61/class_string.html#a965c0fd3bf64cc44014ca6b32683b391" title="Iterators used to iterate over the String.">String::Iterator</a> pointing to the beginning of the found substring, or <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e" title="End iterator. points at the position past the end of the string.">end()</a> if nothing was found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00150">150</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">begin()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a55b709429c65bf186989a95027a99c09">begin()</a>, and <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>.</p>
 
 </div>
 </div>
@@ -1172,9 +1108,7 @@ Friends</h2></td></tr>
 <p>Finds the first occurance of the string inside this string. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../de/d61/class_string.html#a85586aa5f5a54144570234db0014e689">String::ConstIterator</a> pointing to the beginning of the found substring, or <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e" title="End iterator. points at the position past the end of the string.">end()</a> if nothing was found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00154">154</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">begin()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a55b709429c65bf186989a95027a99c09">begin()</a>, and <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>.</p>
 
 </div>
 </div>
@@ -1207,9 +1141,7 @@ Friends</h2></td></tr>
 <p>Finds the first occurance of the string after <code>start</code> inside this string. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../de/d61/class_string.html#a85586aa5f5a54144570234db0014e689">String::ConstIterator</a> pointing to the beginning of the found substring, or <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e" title="End iterator. points at the position past the end of the string.">end()</a> if nothing was found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00162">162</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">begin()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a55b709429c65bf186989a95027a99c09">begin()</a>, and <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>.</p>
 
 </div>
 </div>
@@ -1242,9 +1174,7 @@ Friends</h2></td></tr>
 <p>Finds the first occurance of the string after <code>start</code> inside this string. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../de/d61/class_string.html#a965c0fd3bf64cc44014ca6b32683b391" title="Iterators used to iterate over the String.">String::Iterator</a> pointing to the beginning of the found substring, or <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e" title="End iterator. points at the position past the end of the string.">end()</a> if nothing was found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00158">158</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">begin()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a55b709429c65bf186989a95027a99c09">begin()</a>, and <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>.</p>
 
 </div>
 </div>
@@ -1281,8 +1211,6 @@ Friends</h2></td></tr>
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00138">138</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a98b566f4612563bdd8eefefd4060c0dc"></a>
@@ -1318,8 +1246,6 @@ Friends</h2></td></tr>
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00144">144</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a7439ea31058ebbf872af5c5a5cd65fb0"></a>
@@ -1352,8 +1278,6 @@ template&lt;class... Args&gt; </div>
 <p>Accepts and correctly formats any type <code>T</code> for which an overload for </p><pre class="fragment">std::ostream&amp; operator&lt;&lt;(std::ostream&amp;, T)
 </pre><p>exists. Arguments will be appended to the <a class="el" href="../../de/d61/class_string.html" title="The String class represents a not-null-terminated string.">String</a> in order. Pass <a class="el" href="../../d4/d6a/struct_string_1_1_format.html" title="Specifies the formatting of a String::format operation.">String::Format</a> to specify floating point precision, width, fill chars, base, etc. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db5/_string_8h_source.html#l00236">236</a> of file <a class="el" href="../../db/db5/_string_8h_source.html">String.h</a>.</p>
-
 </div>
 </div>
 <a id="a0d0a9c9d6eb4a2da5ba25dce5417a850"></a>
@@ -1384,9 +1308,7 @@ template&lt;class... Args&gt; </div>
 
 <p>Inserts a char before the position pointed to by the iterator. May invalidate iterators. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>.</p>
 
 </div>
 </div>
@@ -1418,9 +1340,7 @@ template&lt;class... Args&gt; </div>
 
 <p>Inserts the string before the position pointed to by the iterator. May invalidate iterators. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">begin()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a55b709429c65bf186989a95027a99c09">begin()</a>, and <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>.</p>
 
 </div>
 </div>
@@ -1458,9 +1378,7 @@ template&lt;class... Args&gt; </div>
 
 <p>Inserts the part of the string specified by the begin and end iterators before the position pointed to by the "iter" iterator. May invalidate iterators. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">begin()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a55b709429c65bf186989a95027a99c09">begin()</a>, and <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>.</p>
 
 </div>
 </div>
@@ -1489,8 +1407,6 @@ template&lt;class... Args&gt; </div>
 
 <p>Length or size of the string. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a3872e637d5c354807a1282300429b913"></a>
@@ -1509,8 +1425,6 @@ template&lt;class... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Implicit conversion to std::string allowed. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
 
 </div>
 </div>
@@ -1532,9 +1446,7 @@ template&lt;class... Args&gt; </div>
 
 <p>Does a case-sensitive comparison between the chars of both strings. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00194">194</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00184">equals()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#ae4aa3b45e83f1b97d6ee5e34789ec6f2">equals()</a>.</p>
 
 </div>
 </div>
@@ -1556,9 +1468,7 @@ template&lt;class... Args&gt; </div>
 
 <p>Creates a new string by appending a string to this string. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00203">203</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00092">insert()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>, and <a class="el" href="../../de/d61/class_string.html#a0d0a9c9d6eb4a2da5ba25dce5417a850">insert()</a>.</p>
 
 </div>
 </div>
@@ -1580,9 +1490,7 @@ template&lt;class... Args&gt; </div>
 
 <p>Appends the given string to this string. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00198">198</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00092">insert()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>, and <a class="el" href="../../de/d61/class_string.html#a0d0a9c9d6eb4a2da5ba25dce5417a850">insert()</a>.</p>
 
 </div>
 </div>
@@ -1630,9 +1538,7 @@ template&lt;class... Args&gt; </div>
 
 <p>Does a case-sensitive comparison between the chars of both strings. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00190">190</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00184">equals()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#ae4aa3b45e83f1b97d6ee5e34789ec6f2">equals()</a>.</p>
 
 </div>
 </div>
@@ -1664,8 +1570,6 @@ template&lt;class... Args&gt; </div>
 
 <p>Replaces <b>all</b> instances of <code>to_replace</code> with <code>replace_with</code> in the string. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00209">209</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a0e866adf07e2880807aa60fafde0eb48"></a>
@@ -1696,9 +1600,7 @@ template&lt;class... Args&gt; </div>
 
 <p>Replaces <b>all</b> instances of <code>to_replace</code> with <code>replace_with</code> in the string. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00215">215</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">begin()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00049">empty()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00098">erase()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00122">find()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00092">insert()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00053">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a55b709429c65bf186989a95027a99c09">begin()</a>, <a class="el" href="../../de/d61/class_string.html#a7a2c6b7ee5265930faa91993dbc161c9">empty()</a>, <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>, <a class="el" href="../../de/d61/class_string.html#af5c18895c77e8ff3918bcd970a5fa317">erase()</a>, <a class="el" href="../../de/d61/class_string.html#aa7552304b9c74d1cf65a7ee5470210c9">find()</a>, <a class="el" href="../../de/d61/class_string.html#a0d0a9c9d6eb4a2da5ba25dce5417a850">insert()</a>, and <a class="el" href="../../de/d61/class_string.html#a23920b1220d6a094d35724077c2f6ee4">size()</a>.</p>
 
 </div>
 </div>
@@ -1736,9 +1638,7 @@ template&lt;class... Args&gt; </div>
 
 <p>Replaces <code>n</code> instances of <code>to_replace</code> with <code>replace_with</code> in the string. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00228">228</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">begin()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00049">empty()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00098">erase()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00122">find()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00092">insert()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00053">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a55b709429c65bf186989a95027a99c09">begin()</a>, <a class="el" href="../../de/d61/class_string.html#a7a2c6b7ee5265930faa91993dbc161c9">empty()</a>, <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>, <a class="el" href="../../de/d61/class_string.html#af5c18895c77e8ff3918bcd970a5fa317">erase()</a>, <a class="el" href="../../de/d61/class_string.html#aa7552304b9c74d1cf65a7ee5470210c9">find()</a>, <a class="el" href="../../de/d61/class_string.html#a0d0a9c9d6eb4a2da5ba25dce5417a850">insert()</a>, and <a class="el" href="../../de/d61/class_string.html#a23920b1220d6a094d35724077c2f6ee4">size()</a>.</p>
 
 </div>
 </div>
@@ -1761,9 +1661,7 @@ template&lt;class... Args&gt; </div>
 <p>Grows the capacity to fit <code>size</code> many characters. Does not change the size of the string. </p>
 <p>Increases the capacity of the currently allocated memory to be able to hold <code>size</code> many characters before having to reallocate. Calling this before doing a lot of appending up to a known max length can increase performance significantly, as multiple allocations are avoided. Does not impact length. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00277">277</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00053">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a23920b1220d6a094d35724077c2f6ee4">size()</a>.</p>
 
 </div>
 </div>
@@ -1792,8 +1690,6 @@ template&lt;class... Args&gt; </div>
 
 <p>Shrinks capacity to be equal to size, thus freeing memory in some cases. Not guaranteed, as it's implementation dependent. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00285">285</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a23920b1220d6a094d35724077c2f6ee4"></a>
@@ -1820,8 +1716,6 @@ template&lt;class... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Size or length of the string. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
 
 </div>
 </div>
@@ -1857,9 +1751,7 @@ template&lt;class... Args&gt; </div>
 <li><code>expected_splits</code> how many parts are expected. Setting this to a reasonable amount will speed up the split operation as memory can be reserved beforehand. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00245">245</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">begin()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00122">find()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00009">String()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a55b709429c65bf186989a95027a99c09">begin()</a>, <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>, <a class="el" href="../../de/d61/class_string.html#aa7552304b9c74d1cf65a7ee5470210c9">find()</a>, and <a class="el" href="../../de/d61/class_string.html#a8a7ef356e05eb9b1ea1ab518baee3095">String()</a>.</p>
 
 </div>
 </div>
@@ -1895,9 +1787,7 @@ template&lt;class... Args&gt; </div>
 <li><code>expected_splits</code> how many parts are expected. Setting this to a reasonable amount will speed up the split operation as memory can be reserved beforehand. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00260">260</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">begin()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00049">empty()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00122">find()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00053">size()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00009">String()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a55b709429c65bf186989a95027a99c09">begin()</a>, <a class="el" href="../../de/d61/class_string.html#a7a2c6b7ee5265930faa91993dbc161c9">empty()</a>, <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>, <a class="el" href="../../de/d61/class_string.html#aa7552304b9c74d1cf65a7ee5470210c9">find()</a>, <a class="el" href="../../de/d61/class_string.html#a23920b1220d6a094d35724077c2f6ee4">size()</a>, and <a class="el" href="../../de/d61/class_string.html#a8a7ef356e05eb9b1ea1ab518baee3095">String()</a>.</p>
 
 </div>
 </div>
@@ -1919,9 +1809,7 @@ template&lt;class... Args&gt; </div>
 
 <p>Whether this string starts with the substring. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00172">172</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00029">begin()</a>, <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00033">end()</a>, and <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00053">size()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a55b709429c65bf186989a95027a99c09">begin()</a>, <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e">end()</a>, and <a class="el" href="../../de/d61/class_string.html#a23920b1220d6a094d35724077c2f6ee4">size()</a>.</p>
 
 </div>
 </div>
@@ -1953,9 +1841,7 @@ template&lt;class... Args&gt; </div>
 
 <p>A copy of the chars between from and to, as a new string. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00114">114</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00009">String()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a8a7ef356e05eb9b1ea1ab518baee3095">String()</a>.</p>
 
 </div>
 </div>
@@ -1987,9 +1873,7 @@ template&lt;class... Args&gt; </div>
 
 <p>A copy of the first n chars from start, as a new string. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00118">118</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00009">String()</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d61/class_string.html#a8a7ef356e05eb9b1ea1ab518baee3095">String()</a>.</p>
 
 </div>
 </div>
@@ -2010,8 +1894,6 @@ template&lt;class... Args&gt; </div>
 
 <p>A unique_ptr managed char[] containing a copy of the data of the string, guaranteed to be null-terminated. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a2bae6b4327715cdb29bd59fc17fb6c24"></a>
@@ -2030,8 +1912,6 @@ template&lt;class... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>A copy of this string represented as a std::string. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00072">72</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
 
 </div>
 </div>
@@ -2070,8 +1950,6 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00297">297</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a91b9cb194b46a5520c6eb78bb862ce7b"></a>
@@ -2108,13 +1986,11 @@ template&lt;class... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dae/_string_8cpp_source.html#l00301">301</a> of file <a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/<a class="el" href="../../db/db5/_string_8h_source.html">String.h</a></li>
-<li>src/<a class="el" href="../../d9/dae/_string_8cpp_source.html">String.cpp</a></li>
+<li>include/String.h</li>
+<li>src/String.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
