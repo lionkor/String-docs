@@ -30,14 +30,21 @@ var NAVTREE =
       [ "What can I contribute / where can I help?", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md2", null ]
     ] ],
     [ "String v2.0", "md__r_e_a_d_m_e.html", [
-      [ "Major features", "md__r_e_a_d_m_e.html#autotoc_md4", [
-        [ "String::format", "md__r_e_a_d_m_e.html#autotoc_md5", null ]
+      [ "Documentation", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
+      [ "How to use", "md__r_e_a_d_m_e.html#autotoc_md5", [
+        [ "1 Compile with your project", "md__r_e_a_d_m_e.html#autotoc_md6", null ],
+        [ "2 Compile as library, link (linux/unix)", "md__r_e_a_d_m_e.html#autotoc_md7", null ]
       ] ],
-      [ "How to use", "md__r_e_a_d_m_e.html#autotoc_md6", null ],
-      [ "FAQ", "md__r_e_a_d_m_e.html#autotoc_md7", [
-        [ "Is <tt>std::string</tt> not good?", "md__r_e_a_d_m_e.html#autotoc_md8", null ],
-        [ "Why <tt>std::vector</tt>?", "md__r_e_a_d_m_e.html#autotoc_md9", null ],
-        [ "Where did open issues go?", "md__r_e_a_d_m_e.html#autotoc_md10", null ]
+      [ "Major features", "md__r_e_a_d_m_e.html#autotoc_md8", [
+        [ "String::format", "md__r_e_a_d_m_e.html#autotoc_md9", null ]
+      ] ],
+      [ "FAQ", "md__r_e_a_d_m_e.html#autotoc_md10", [
+        [ "How do you run the tests?", "md__r_e_a_d_m_e.html#autotoc_md11", null ],
+        [ "Is <tt>std::string</tt> not good?", "md__r_e_a_d_m_e.html#autotoc_md12", null ],
+        [ "Is it faster / slower than <tt>std::string</tt>?", "md__r_e_a_d_m_e.html#autotoc_md13", null ],
+        [ "How do you convert to <tt>std::string</tt> or <tt>char*</tt>?", "md__r_e_a_d_m_e.html#autotoc_md14", null ],
+        [ "Why <tt>std::vector</tt>?", "md__r_e_a_d_m_e.html#autotoc_md15", null ],
+        [ "Where did open issues go?", "md__r_e_a_d_m_e.html#autotoc_md16", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
