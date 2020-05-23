@@ -171,9 +171,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a78e422178ba93ec94285b40d34abed3d"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d61/class_string.html#a78e422178ba93ec94285b40d34abed3d">length</a> () const noexcept</td></tr>
 <tr class="memdesc:a78e422178ba93ec94285b40d34abed3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length or size of the string.  <a href="../../de/d61/class_string.html#a78e422178ba93ec94285b40d34abed3d">More...</a><br /></td></tr>
 <tr class="separator:a78e422178ba93ec94285b40d34abed3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a5b9637cebca0ef91bacf0b52c60022"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d61/class_string.html#a6a5b9637cebca0ef91bacf0b52c60022">to_c_string</a> () const</td></tr>
-<tr class="memdesc:a6a5b9637cebca0ef91bacf0b52c60022"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique_ptr managed char[] containing a copy of the data of the string, guaranteed to be null-terminated.  <a href="../../de/d61/class_string.html#a6a5b9637cebca0ef91bacf0b52c60022">More...</a><br /></td></tr>
-<tr class="separator:a6a5b9637cebca0ef91bacf0b52c60022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de4d5c9086fa92f9403410a9f3441b2"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; char[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d61/class_string.html#a9de4d5c9086fa92f9403410a9f3441b2">to_c_string</a> () const</td></tr>
+<tr class="memdesc:a9de4d5c9086fa92f9403410a9f3441b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique_ptr managed char[] containing a copy of the data of the string, guaranteed to be null-terminated.  <a href="../../de/d61/class_string.html#a9de4d5c9086fa92f9403410a9f3441b2">More...</a><br /></td></tr>
+<tr class="separator:a9de4d5c9086fa92f9403410a9f3441b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bae6b4327715cdb29bd59fc17fb6c24"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d61/class_string.html#a2bae6b4327715cdb29bd59fc17fb6c24">to_std_string</a> () const</td></tr>
 <tr class="memdesc:a2bae6b4327715cdb29bd59fc17fb6c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">A copy of this string represented as a std::string.  <a href="../../de/d61/class_string.html#a2bae6b4327715cdb29bd59fc17fb6c24">More...</a><br /></td></tr>
 <tr class="separator:a2bae6b4327715cdb29bd59fc17fb6c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,12 +216,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af1578e9f806ebfc9db114be883ea9bfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d61/class_string.html#a85586aa5f5a54144570234db0014e689">ConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d61/class_string.html#af1578e9f806ebfc9db114be883ea9bfd">find</a> (char c, <a class="el" href="../../de/d61/class_string.html#a85586aa5f5a54144570234db0014e689">ConstIterator</a> start) const</td></tr>
 <tr class="memdesc:af1578e9f806ebfc9db114be883ea9bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the first occurance of char c in the string after <code>start</code>. Returns <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e" title="End iterator. points at the position past the end of the string.">end()</a> if nothing was found.  <a href="../../de/d61/class_string.html#af1578e9f806ebfc9db114be883ea9bfd">More...</a><br /></td></tr>
 <tr class="separator:af1578e9f806ebfc9db114be883ea9bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d18301f8f468c59944763f7830a795e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d61/class_string.html#a965c0fd3bf64cc44014ca6b32683b391">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d61/class_string.html#a1d18301f8f468c59944763f7830a795e">find_caseless</a> (char c, const std::locale &amp;locale=std::locale::classic())</td></tr>
-<tr class="memdesc:a1d18301f8f468c59944763f7830a795e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the first occurance of char c in the string, ignoring case. Returns <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e" title="End iterator. points at the position past the end of the string.">end()</a> if nothing was found. Default locale is "C".  <a href="../../de/d61/class_string.html#a1d18301f8f468c59944763f7830a795e">More...</a><br /></td></tr>
-<tr class="separator:a1d18301f8f468c59944763f7830a795e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98b566f4612563bdd8eefefd4060c0dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d61/class_string.html#a85586aa5f5a54144570234db0014e689">ConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d61/class_string.html#a98b566f4612563bdd8eefefd4060c0dc">find_caseless</a> (char c, const std::locale &amp;locale=std::locale::classic()) const</td></tr>
-<tr class="memdesc:a98b566f4612563bdd8eefefd4060c0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the first occurance of char c in the string, ignoring case. Returns <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e" title="End iterator. points at the position past the end of the string.">end()</a> if nothing was found. Default locale is "C".  <a href="../../de/d61/class_string.html#a98b566f4612563bdd8eefefd4060c0dc">More...</a><br /></td></tr>
-<tr class="separator:a98b566f4612563bdd8eefefd4060c0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bb1346221ed46a753eddf4617f48f1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d61/class_string.html#a965c0fd3bf64cc44014ca6b32683b391">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d61/class_string.html#a3bb1346221ed46a753eddf4617f48f1f">find</a> (const <a class="el" href="../../de/d61/class_string.html">String</a> &amp;)</td></tr>
 <tr class="memdesc:a3bb1346221ed46a753eddf4617f48f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the first occurance of the string inside this string.  <a href="../../de/d61/class_string.html#a3bb1346221ed46a753eddf4617f48f1f">More...</a><br /></td></tr>
 <tr class="separator:a3bb1346221ed46a753eddf4617f48f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,7 +302,7 @@ Friends</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd><code>lionkor</code> (Lion Kortlepel)</dd></dl>
 <p>A <a class="el" href="../../de/d61/class_string.html" title="The String class represents a not-null-terminated string.">String</a> class without many of the inconsistencies that <code>std::string</code> brings, and many helper functions, making it more alike Python or .NET strings.</p>
 <p>Implemented as a wrapper around a <code>std::vector&lt;char&gt;</code> for safety, simplicity and speed. This means that any <code>&lt;algorithm&gt;</code> calls should work as expected.</p>
-<dl class="section attention"><dt>Attention</dt><dd><a class="el" href="../../de/d61/class_string.html" title="The String class represents a not-null-terminated string.">String</a> is <b>not</b> null-terminated. If a null-terminated string is needed, it's very simple to convert to a <code>std::string</code> or c-string via <code><a class="el" href="../../de/d61/class_string.html#a6a5b9637cebca0ef91bacf0b52c60022" title="A unique_ptr managed char[] containing a copy of the data of the string, guaranteed to be null-termin...">String::to_c_string</a></code> and <code><a class="el" href="../../de/d61/class_string.html#a2bae6b4327715cdb29bd59fc17fb6c24" title="A copy of this string represented as a std::string.">String::to_std_string</a></code>. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd><a class="el" href="../../de/d61/class_string.html" title="The String class represents a not-null-terminated string.">String</a> is <b>not</b> null-terminated. If a null-terminated string is needed, it's very simple to convert to a <code>std::string</code> or c-string via <code><a class="el" href="../../de/d61/class_string.html#a9de4d5c9086fa92f9403410a9f3441b2" title="A unique_ptr managed char[] containing a copy of the data of the string, guaranteed to be null-termin...">String::to_c_string</a></code> and <code><a class="el" href="../../de/d61/class_string.html#a2bae6b4327715cdb29bd59fc17fb6c24" title="A copy of this string represented as a std::string.">String::to_std_string</a></code>. </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a85586aa5f5a54144570234db0014e689"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85586aa5f5a54144570234db0014e689">&#9670;&nbsp;</a></span>ConstIterator</h2>
@@ -1178,76 +1172,6 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a1d18301f8f468c59944763f7830a795e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d18301f8f468c59944763f7830a795e">&#9670;&nbsp;</a></span>find_caseless() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../de/d61/class_string.html#a965c0fd3bf64cc44014ca6b32683b391">String::Iterator</a> String::find_caseless </td>
-          <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::locale &amp;&#160;</td>
-          <td class="paramname"><em>locale</em> = <code>std::locale::classic()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Finds the first occurance of char c in the string, ignoring case. Returns <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e" title="End iterator. points at the position past the end of the string.">end()</a> if nothing was found. Default locale is "C". </p>
-<ul>
-<li><code>c</code> character to find </li>
-<li><code>locale</code> locale to use when considering and converting case <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../de/d61/class_string.html#a965c0fd3bf64cc44014ca6b32683b391" title="Iterators used to iterate over the String.">String::Iterator</a> pointing to the found character, or <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e" title="End iterator. points at the position past the end of the string.">end()</a> if nothing was found </dd></dl>
-</li>
-</ul>
-
-</div>
-</div>
-<a id="a98b566f4612563bdd8eefefd4060c0dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98b566f4612563bdd8eefefd4060c0dc">&#9670;&nbsp;</a></span>find_caseless() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../de/d61/class_string.html#a85586aa5f5a54144570234db0014e689">String::ConstIterator</a> String::find_caseless </td>
-          <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::locale &amp;&#160;</td>
-          <td class="paramname"><em>locale</em> = <code>std::locale::classic()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Finds the first occurance of char c in the string, ignoring case. Returns <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e" title="End iterator. points at the position past the end of the string.">end()</a> if nothing was found. Default locale is "C". </p>
-<ul>
-<li><code>c</code> character to find </li>
-<li><code>locale</code> locale to use when considering and converting case <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../de/d61/class_string.html#a85586aa5f5a54144570234db0014e689">String::ConstIterator</a> pointing to the found character, or <a class="el" href="../../de/d61/class_string.html#aff08fca7243120ea188090ebb4ae785e" title="End iterator. points at the position past the end of the string.">end()</a> if nothing was found </dd></dl>
-</li>
-</ul>
-
-</div>
-</div>
 <a id="a7439ea31058ebbf872af5c5a5cd65fb0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7439ea31058ebbf872af5c5a5cd65fb0">&#9670;&nbsp;</a></span>format()</h2>
 
@@ -1877,14 +1801,14 @@ template&lt;class... Args&gt; </div>
 
 </div>
 </div>
-<a id="a6a5b9637cebca0ef91bacf0b52c60022"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a5b9637cebca0ef91bacf0b52c60022">&#9670;&nbsp;</a></span>to_c_string()</h2>
+<a id="a9de4d5c9086fa92f9403410a9f3441b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9de4d5c9086fa92f9403410a9f3441b2">&#9670;&nbsp;</a></span>to_c_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; char &gt; String::to_c_string </td>
+          <td class="memname">std::unique_ptr&lt; char[]&gt; String::to_c_string </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

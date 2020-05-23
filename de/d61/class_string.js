@@ -37,8 +37,6 @@ var class_string =
     [ "find", "de/d61/class_string.html#a803adcfe5f108764a50e6df07aa7afed", null ],
     [ "find", "de/d61/class_string.html#aefe73d59c177e761a5e95b4704ebd2b1", null ],
     [ "find", "de/d61/class_string.html#a6a417a3990ed8e7cca63bd1b89104288", null ],
-    [ "find_caseless", "de/d61/class_string.html#a1d18301f8f468c59944763f7830a795e", null ],
-    [ "find_caseless", "de/d61/class_string.html#a98b566f4612563bdd8eefefd4060c0dc", null ],
     [ "insert", "de/d61/class_string.html#a0d0a9c9d6eb4a2da5ba25dce5417a850", null ],
     [ "insert", "de/d61/class_string.html#a10390623ccc748b7075164e4e426fad9", null ],
     [ "insert", "de/d61/class_string.html#a024ab967e6dc72d485a2b8bdd27864db", null ],
@@ -60,7 +58,7 @@ var class_string =
     [ "startswith", "de/d61/class_string.html#a4532aa2b81eccf6eea8b45b7d58a7000", null ],
     [ "substring", "de/d61/class_string.html#ae07c022aa008954b26a37893290205b4", null ],
     [ "substring", "de/d61/class_string.html#a345c16d3e810664cfd1fb36411549091", null ],
-    [ "to_c_string", "de/d61/class_string.html#a6a5b9637cebca0ef91bacf0b52c60022", null ],
+    [ "to_c_string", "de/d61/class_string.html#a9de4d5c9086fa92f9403410a9f3441b2", null ],
     [ "to_std_string", "de/d61/class_string.html#a2bae6b4327715cdb29bd59fc17fb6c24", null ],
     [ "operator<<", "de/d61/class_string.html#a18332672ad6e721a4db7f99456539719", null ],
     [ "operator>>", "de/d61/class_string.html#a91b9cb194b46a5520c6eb78bb862ce7b", null ]
